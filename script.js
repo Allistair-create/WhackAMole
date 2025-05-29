@@ -63,3 +63,29 @@ function update() {
         gameOver()
     }
 }
+
+// Play again Button 
+function gameOver() {
+    clearTimeout(timeoutID)
+    cell.removeEventListener('click', hitit)
+    // Create a "Game over" message div
+    const gameOverDiv = document.createElement('div');
+    gameOverDiv.innerText = 'Game over';
+    gameOverDiv.classList.add('gameover');
+    document.body.appendChild(gameOverDiv);
+
+    // Create "Play Again" button
+    const playAgainBtn = document.createElement('button');
+    playAgainBtn.innerText = 'Play Again';
+    playAgainBtn.classList.add('play-again');
+    playAgainBtn.addEventListener('click', () => {
+        location.reload(); // Refreshes the page
+    });
+    // Optional: also allow touch events for mobile devices
+    playAgainBtn.addEventListener('touchstart', () => {
+        location.reload();
+    });
+
+    document.body.appendChild(playAgainBtn);
+}
+// End of play again button
