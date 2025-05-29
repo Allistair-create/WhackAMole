@@ -3,10 +3,16 @@
 
 <head>
   <title>Whack a mole</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <h2>Score: <span id="score">0</span></h2>
+  <section class="top">
+    <h2>Score: <span id="score">0</span></h2>
+    <div class="progress">
+      <div class="remaining"></div>
+    </div>
+  </section>
   <div id="grid">
     <div class="square" id="1"></div>
     <div class="square" id="2"></div>
@@ -18,6 +24,7 @@
     <div class="square" id="8"></div>
     <div class="square" id="9"></div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </HTML>
