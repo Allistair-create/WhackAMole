@@ -63,3 +63,20 @@ img {
 	height: 100%;
     border-radius: 10px;
 }
+
+/*PLAY BUTTON CSS*/
+.play-again {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    font-size: 1.2em;
+    background-color: #3bceac;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.play-again:hover {
+    background-color: #379683;
+}
+/*END OF PLAY BUTTON CSS*/
